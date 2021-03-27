@@ -1,0 +1,24 @@
+<body>
+    <br>
+    <br>
+    
+        <div class="row text-center">
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4">
+                    <div style="color:black">
+                        <%rideList.forEach( ride => {%>
+                            <p>Vehicle: <%= ride.vehicle %></p>
+                            <p>From: <%= ride.from %></p>
+                            <p>To: <%= ride.to %></p>
+                            <p>Seat: <%= ride.seat %></p>
+                            <p>Phone: <%= ride.phone %></p> 
+                            <p>Time: <%= ride.time %></p> 
+                            <p>Message: <%= ride.message %></p>
+                        <% })%>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+</body>
